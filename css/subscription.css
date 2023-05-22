@@ -1,0 +1,81 @@
+.subscription {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /*align-items: center;*/
+  flex-wrap: wrap;
+}
+.col-1 {
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/vibes-transparent.png);
+  background-size: cover;
+  background-position: center;
+  min-height: inherit;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.col-2 {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+.subscription form {
+  width: 100%;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+}
+.subscription label {
+  display: block;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+}
+.subscription label span {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+}
+.subscription label span small {
+  font-size: 18px;
+}
+.subsription input[type="radio"]:checked + span {
+  color: skyblue;
+}
+.subscription input[type="text"],
+.subscription input[type="email"] {
+  width: 100%;
+  background-color: transparent;
+  padding: 7px 10px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 12px 0;
+
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.subscription form button {
+  font-size: 16px;
+  padding: 12px 50px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
